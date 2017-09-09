@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+</head>
+
+<body>
+
+<div class="container" id="headOne">
+ <header id="header">Trivial Trivia</header>
+   <div id ="time-left">00:30
+   <!--<span id="time-min"></span>
+   <span id="time-sec"></span> -->
+    </div>
+  <!-- Div containing button controls -->
+  <div id="buttonsOne">
+    <button id="start">Start</button>
+  </div>
+</div>
+<div id="wrapper">
+  <div class='form' id='questions-container'>
+   </div>
+  <div class='results'>
+   </div>
+  <div id="messageDiv">
+   </div>
+  <div id="buttonsTwo">
+   <button id="done">Done</button>
+   <button id="restart">Restart</button>
+   </div>
+</div>
+<div id="footer">
+   <div class="container" id="third">
+      <p class="text-muted">@2017 Bohyeon An <a href="http://www.sfseba.us">sfseba.com</a>
+      <a href="http://www.sfanbo.us">sfanbo.com</a></p>
+    </div>
+   </div>
+ </body>
+</html>
+<script src="assets/javascript/app.js"></script>
+
+<!--
+var ans = new Array;
+var done = new Array;
+var score = 0; //정탑
+	ans[1] = "c";
+	ans[2] = "a";
+	ans[3] = "b";
+	ans[4] = "b";
+	ans[5] = "d";
+	ans[6] = "c";
+	ans[7] = "c";
+	ans[8] = "c";
+	ans[9] = "d";
+	ans[10] = "a";
+
+function Engine(question, answer) {
+	if (answer != ans[question]) {
+	if (!done[question]) {
+		done[question] = -1;
+		alert("Wrong!\n\nYour score is now: " + score);
+	}
+	else {
+		alert("You have already answered that!");
+	   }
+	}
+	else {
+		if (!done[question]) {
+			done[question] = -1;
+			score++;
+			alert("Correct!\n\nYour score is now: " + score);
+		}
+		else {
+			alert("You have already answered that!");
+      }
+   }
+}
+
+function NextLevel () {
+	if (score > 10) {
+		alert("Cheater!");
+}
+	if (score >= 7 && score <= 11) {
+		alert("Access permitted!  But there are no more levels if you don't make any ...")
+	}
+	else { alert("Access denied!  You need 7 points to enter the next level.")   }
+}
+//-->
